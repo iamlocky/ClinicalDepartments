@@ -1,2 +1,8 @@
 # 基于litepal开发的广中医一附院科室查询app
 ### 截图
+[![](https://raw.githubusercontent.com/iamlocky/ClinicalDepartments/master/screenshots/Screenrecorder-%5B00_00_02%5D%5B20171016-222021-2%5D.JPG)](https://raw.githubusercontent.com/iamlocky/ClinicalDepartments/master/screenshots/Screenrecorder-%5B00_00_02%5D%5B20171016-222021-2%5D.JPG)
+[![](https://raw.githubusercontent.com/iamlocky/ClinicalDepartments/master/screenshots/Screenrecorder-%5B00_00_06%5D%5B20171016-221945-1%5D.JPG)](https://raw.githubusercontent.com/iamlocky/ClinicalDepartments/master/screenshots/Screenrecorder-%5B00_00_06%5D%5B20171016-221945-1%5D.JPG)
+[![](https://raw.githubusercontent.com/iamlocky/ClinicalDepartments/master/screenshots/Screenrecorder-%5B00_00_16%5D%5B20171016-222119-3%5D.JPG)](https://raw.githubusercontent.com/iamlocky/ClinicalDepartments/master/screenshots/Screenrecorder-%5B00_00_16%5D%5B20171016-222119-3%5D.JPG)
+[![](https://raw.githubusercontent.com/iamlocky/ClinicalDepartments/master/screenshots/Screenrecorder-%5B00_00_40%5D%5B20171016-222216-4%5D.JPG)](https://raw.githubusercontent.com/iamlocky/ClinicalDepartments/master/screenshots/Screenrecorder-%5B00_00_40%5D%5B20171016-222216-4%5D.JPG)
+[![](https://raw.githubusercontent.com/iamlocky/ClinicalDepartments/master/screenshots/Screenrecorder-%5B00_00_46%5D%5B20171016-222236-5%5D.JPG)](https://raw.githubusercontent.com/iamlocky/ClinicalDepartments/master/screenshots/Screenrecorder-%5B00_00_46%5D%5B20171016-222236-5%5D.JPG)
+[![](https://raw.githubusercontent.com/iamlocky/ClinicalDepartments/master/screenshots/Screenrecorder-%5B00_00_55%5D%5B20171016-222308-6%5D.JPG)](https://raw.githubusercontent.com/iamlocky/ClinicalDepartments/master/screenshots/Screenrecorder-%5B00_00_55%5D%5B20171016-222308-6%5D.JPG)
