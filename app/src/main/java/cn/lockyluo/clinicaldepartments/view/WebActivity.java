@@ -49,8 +49,8 @@ public class WebActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         ActionBar ab = getSupportActionBar();//添加返回按钮
         ab.setDisplayHomeAsUpEnabled(true);
-        mWeb = (WebView) findViewById(R.id.webview);
-        progressBar = (ProgressBar) findViewById(R.id.webview_progressbar);
+        mWeb =findViewById(R.id.webview);
+        progressBar =findViewById(R.id.webview_progressbar);
 
         WebSettings settings = mWeb.getSettings();
         settings.setJavaScriptEnabled(true);

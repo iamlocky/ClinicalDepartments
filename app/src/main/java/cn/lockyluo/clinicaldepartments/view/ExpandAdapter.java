@@ -1,6 +1,5 @@
 package cn.lockyluo.clinicaldepartments.view;
 
-import android.app.Activity;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -29,8 +28,6 @@ import cn.lockyluo.clinicaldepartments.model.DetailDepartment;
 
 public class ExpandAdapter extends BaseExpandableListAdapter {
     private List<BaseDepartment> data = new ArrayList<>();
-    private List<ViewHolder> viewHolders=new ArrayList<>();
-    private List<ViewHolderChild> viewHolderChildren=new ArrayList<>();
 
     private Context context;
     private ViewHolder viewHolder;
@@ -98,7 +95,6 @@ public class ExpandAdapter extends BaseExpandableListAdapter {
 
     @Override
     public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
-//        if (view == null) {
             final BaseDepartment base=data.get(i);
             Logger.d(base);
             view = LayoutInflater.from(context).inflate(R.layout.group_item, null);
@@ -111,17 +107,13 @@ public class ExpandAdapter extends BaseExpandableListAdapter {
                     ToastUtils.show(base.getBaseDepartment());
                 }
             });
-//            viewHolders.add(viewHolder);
-//        } else {
-//            viewHolder=viewHolders.get(i);
-//        }
+
 
         return view;
     }
 
     @Override
     public View getChildView(int i, int i1, boolean b, View view, ViewGroup viewGroup) {
-//        if (view == null) {
             final DetailDepartment detailDepartment=data.get(i).getDetailDepartments().get(i1);
             Logger.d(detailDepartment);
 
@@ -150,10 +142,7 @@ public class ExpandAdapter extends BaseExpandableListAdapter {
                 return true;
             }
         });
-//            view.setTag(viewHolderChild);
-//        } else {
-//            viewHolderChild=(ViewHolderChild) view.getTag();
-//        }
+
         return view;
     }
 

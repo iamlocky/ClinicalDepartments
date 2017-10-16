@@ -26,12 +26,12 @@ import cn.lockyluo.clinicaldepartments.model.InitDataModel;
  */
 
 public class LoadDataAsync extends AsyncTask<OnLoadListener, Integer, List<BaseDepartment>> {
-    private static String dbPath;
-    private static OnLoadListener onLoadListener;
+    private String dbPath;
+    private OnLoadListener onLoadListener;
     private static List<BaseDepartment> data;
     private static File dbFile;
-    private static int condition = -1;
-    private static String param;
+    private int condition = -1;
+    private String param;
 
 
     public static SQLiteDatabase database;
@@ -58,12 +58,12 @@ public class LoadDataAsync extends AsyncTask<OnLoadListener, Integer, List<BaseD
         switch (condition) {
             case FIND_BY_ID: {
                 try {
-                    data = DataSupport.where("uid like\'%" + param+"%\'").find(BaseDepartment.class);
+                    data = DataSupport.where("uid like\'%" + param + "%\'").find(BaseDepartment.class);
                     if (data.isEmpty() || data == null) {
-                        List<DetailDepartment> details = DataSupport.where("uid like\'%" + param+"%\'").find(DetailDepartment.class);
-                        if (!details.isEmpty()&&details != null) {
-                            data=new ArrayList<>();
-                            BaseDepartment base=new BaseDepartment();
+                        List<DetailDepartment> details = DataSupport.where("uid like\'%" + param + "%\'").find(DetailDepartment.class);
+                        if (!details.isEmpty() && details != null) {
+                            data = new ArrayList<>();
+                            BaseDepartment base = new BaseDepartment();
                             base.setDetailDepartments(details);
                             base.setBaseDepartment("按id查找");
                             base.setContent("按id查找");
@@ -71,7 +71,7 @@ public class LoadDataAsync extends AsyncTask<OnLoadListener, Integer, List<BaseD
                             base.setId(0);
                             data.add(base);
                         }
-                    }else {
+                    } else {
                         getDetailList();
                     }
                 } catch (Exception e) {
@@ -83,12 +83,12 @@ public class LoadDataAsync extends AsyncTask<OnLoadListener, Integer, List<BaseD
 
             case FIND_BY_STRING: {
                 try {
-                    data = DataSupport.where("baseDepartment like\'%" + param+"%\'").find(BaseDepartment.class);
+                    data = DataSupport.where("baseDepartment like\'%" + param + "%\'").find(BaseDepartment.class);
                     if (data.isEmpty() || data == null) {
-                        List<DetailDepartment> details = DataSupport.where("department like\'%" + param+"%\'").find(DetailDepartment.class);
-                        if (!details.isEmpty()&&details != null) {
-                            data=new ArrayList<>();
-                            BaseDepartment base=new BaseDepartment();
+                        List<DetailDepartment> details = DataSupport.where("department like\'%" + param + "%\'").find(DetailDepartment.class);
+                        if (!details.isEmpty() && details != null) {
+                            data = new ArrayList<>();
+                            BaseDepartment base = new BaseDepartment();
                             base.setDetailDepartments(details);
                             base.setBaseDepartment("按科室名查找");
                             base.setContent("按科室名查找");
@@ -96,7 +96,7 @@ public class LoadDataAsync extends AsyncTask<OnLoadListener, Integer, List<BaseD
                             base.setId(0);
                             data.add(base);
                         }
-                    }else {
+                    } else {
                         getDetailList();
                     }
                 } catch (Exception e) {
@@ -108,15 +108,14 @@ public class LoadDataAsync extends AsyncTask<OnLoadListener, Integer, List<BaseD
         }
     }
 
-    private void getDetailList(){
-        if (data==null)
-        {
+    private void getDetailList() {
+        if (data == null) {
             Logger.e("data is null");
             return;
         }
-        for (int i = 0; i <data.size() ; i++) {
+        for (int i = 0; i < data.size(); i++) {
             List<DetailDepartment> details = DataSupport.where("basedepartment_id=" + data.get(i).getId()).find(DetailDepartment.class);
-            if (!details.isEmpty()&&details != null) {
+            if (!details.isEmpty() && details != null) {
                 data.get(i).setDetailDepartments(details);
             }
         }
