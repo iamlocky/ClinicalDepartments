@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.lockyluo.clinicaldepartments.view.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+
+            app:expandedTitleGravity="center_horizontal|bottom"
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleGravity="left"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/iv_mine_head"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="33dp"
+                android:fitsSystemWindows="true"
+                android:src="@android:drawable/ic_dialog_info"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="5dp" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/OverflowMenuStyle" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        app:borderWidth="0dp"
+        app:rippleColor="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="18dp"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        app:layout_behavior="cn.lockyluo.clinicaldepartments.behavior.ScrollHide"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

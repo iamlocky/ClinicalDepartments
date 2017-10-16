@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="d0">
+        <item>心血管内科</item>
+        <item>消化内科</item>
+        <item>肾内科（含血液净化室）</item>
+        <item>神经内科</item>
+        <item>呼吸内科</item>
+        <item>内分泌科</item>
+        <item>血液科</item>
+        <item>风湿免疫科</item>
+        <item>重症监护科</item>
+        <item>综合科</item>
+        <item>急诊科（含普通内科病区）</item>
+
+    </string-array>
+    <string-array name="d1">
+        <item>泌尿外科（含体外碎石室）</item>
+        <item> 胃肠甲状腺外科</item>
+        <item>乳腺外科</item>
+        <item>心胸血管外科</item>
+        <item>肝胆外科</item>
+        <item>肛肠外科</item>
+
+    </string-array>
+    <string-array name="d2">
+        <item>妇科(中医妇科专科)</item>
+        <item>二妇科(中医妇科专科)</item>
+        <item>产科</item>
+        <item>新生儿科</item>
+
+    </string-array>
+    <string-array name="d3">
+        <item>一肿瘤科</item>
+        <item>二肿瘤科</item>
+        <item>三肿瘤科</item>
+        <item>四肿瘤科</item>
+
+    </string-array>
+    <string-array name="d4">
+        <item>皮肤科</item>
+        <item>针灸科</item>
+        <item>推拿科</item>
+        <item>儿科</item>
+        <item>护理部</item>
+        <item>麻醉科</item>
+        <item>创伤骨科</item>
+        <item>脊柱骨科</item>
+        <item>关节一科</item>
+        <item>关节二科（骨伤康复、运动损伤康复）</item>
+        <item>颅脑科</item>
+        <item>口腔科</item>
+        <item>耳鼻喉科</item>
+        <item>眼科</item>
+        <item>病理科</item>
+    </string-array>
+</resources>

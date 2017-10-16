@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cn.lockyluo.clinicaldepartments.view.MainActivity">
+
+    <item
+        android:icon="@android:drawable/ic_menu_search"
+        android:id="@+id/action_search"
+        android:orderInCategory="1"
+        android:title="查找"
+        app:showAsAction="always" />
+    <item
+        android:icon="@android:drawable/ic_menu_save"
+        android:id="@+id/action_save"
+        android:orderInCategory="2"
+        android:title="查找"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_default"
+        android:orderInCategory="98"
+        android:title="显示所有科室"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="99"
+        android:title="重建数据库"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="关于"
+        app:showAsAction="never" />
+</menu>
